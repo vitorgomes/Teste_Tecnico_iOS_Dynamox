@@ -7,16 +7,6 @@
 
 import Foundation
 
-struct Question: Codable {
-    let id: String
-    let statement: String
-    let options: [String]
-}
-
-struct AnswerResponse: Codable {
-    let result: Bool
-}
-
 class QuizManager {
     let baseURL = "https://quiz-api-bwi5hjqyaq-uc.a.run.app"
     
@@ -32,6 +22,9 @@ class QuizManager {
             do {
                 let question = try JSONDecoder().decode(Question.self, from: data)
                 completion(question, nil)
+                // Prints for tests purposes, to registry all the activity on console
+                print("Question ID and Statement: \(question.id) - \(question.statement)")
+                print("Question Options: \(question.options)")
             } catch {
                 completion(nil, error)
             }
@@ -59,7 +52,8 @@ class QuizManager {
             do {
                 let answerResponse = try JSONDecoder().decode(AnswerResponse.self, from: data)
                 completion(answerResponse.result, nil)
-                print(questionId)
+                // Print for tests purposes, to registry all the activity on console
+                print("Chosen option: \(answer) | Result: \(answerResponse.result ? "CORRECT" : "INCORRECT")")
             } catch {
                 completion(nil, error)
             }
