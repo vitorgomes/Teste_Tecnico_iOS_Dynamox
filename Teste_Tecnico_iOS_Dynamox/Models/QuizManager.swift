@@ -59,6 +59,7 @@ class QuizManager {
             do {
                 let answerResponse = try JSONDecoder().decode(AnswerResponse.self, from: data)
                 completion(answerResponse.result, nil)
+                print(questionId)
             } catch {
                 completion(nil, error)
             }
