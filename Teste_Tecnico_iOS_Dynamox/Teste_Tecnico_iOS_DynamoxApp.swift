@@ -11,7 +11,7 @@ import SwiftUI
 struct Teste_Tecnico_iOS_DynamoxApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            SplashView()
         }
     }
 }

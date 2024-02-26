@@ -54,6 +54,7 @@ class QuizManager {
                 completion(answerResponse.result, nil)
                 // Print for tests purposes, to registry all the activity on console
                 print("Chosen option: \(answer) | Result: \(answerResponse.result ? "CORRECT" : "INCORRECT")")
+                print("***")
             } catch {
                 completion(nil, error)
             }

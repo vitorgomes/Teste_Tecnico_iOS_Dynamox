@@ -28,6 +28,8 @@ class QuizViewModel: ObservableObject {
                 print("Erro ao buscar pergunta: \(error)")
             } else if let fetchedQuestion = fetchedQuestion {
                 self.question = fetchedQuestion
+                print("***")
+                print("Question number (in game): \(questionsAnswered + 1)")
             }
         }
     }

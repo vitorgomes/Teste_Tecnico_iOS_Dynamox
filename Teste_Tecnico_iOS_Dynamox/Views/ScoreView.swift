@@ -18,7 +18,6 @@ struct ScoreView: View {
                 Text("**\(userName)** sua pontuaçao foi de: **\(score)** pontos")
                     .padding(.bottom, 8)
 
-                // TODO: Not working. I believe it is because i am using fullScreenCover modifier on QuizView and some how is messing up NavigationStack order
                 NavigationLink(destination: HomeView()) {
                     Text("Reiniciar")
                         .frame(width: screenSize.width * 0.8, height: 48)
@@ -30,6 +29,7 @@ struct ScoreView: View {
         .frame(width: screenSize.width * 0.8)
         .navigationTitle("Pontuação")
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden()
     }
 }
 
