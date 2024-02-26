@@ -11,7 +11,6 @@ class QuizManager {
     let baseURL = "https://quiz-api-bwi5hjqyaq-uc.a.run.app"
     
     func fetchQuestions(completion: @escaping (Question?, Error?) -> Void) {
-        //let url = URL(string: "\(baseURL)/question")!
         guard let url = URL(string: "\(baseURL)/question") else {
             print("Error forming the URL")
             return
@@ -37,7 +36,6 @@ class QuizManager {
     
     func submitAnswer(questionId: String, answer: String, completion: @escaping (Bool?, Error?) -> Void) {
         let urlString = "\(baseURL)/answer?questionId=\(questionId)"
-        //let url = URL(string: urlString)!
         guard let url = URL(string: urlString) else {
             print("Error forming the URL")
             return

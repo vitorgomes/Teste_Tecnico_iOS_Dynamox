@@ -32,9 +32,7 @@ struct QuizView: View {
                         Text("Responder")
                             .frame(width: screenSize.width * 0.8, height: 48, alignment: .center)
                     }
-                    .frame(width: screenSize.width * 0.8, height: 48, alignment: .center)
-                    .background(Color(.blue))
-                    .foregroundColor(.white)
+                    .blueBackgroundWhiteTitleEightyPercentWidthViewSizeStyle()
                     .padding()
                     
                     if let result = quizViewModel.result {

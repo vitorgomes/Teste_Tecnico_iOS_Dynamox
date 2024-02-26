@@ -22,9 +22,7 @@ struct HomeView: View {
                 
                 NavigationLink(destination: QuizView(userName: userName)) {
                     Text("Iniciar")
-                        .frame(width: screenSize.width * 0.8, height: 48, alignment: .center)
-                        .background(Color(.blue))
-                        .foregroundColor(.white)
+                        .blueBackgroundWhiteTitleEightyPercentWidthViewSizeStyle()
                 }
             }
         }

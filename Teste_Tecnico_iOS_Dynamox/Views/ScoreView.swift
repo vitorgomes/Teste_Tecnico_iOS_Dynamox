@@ -20,9 +20,7 @@ struct ScoreView: View {
 
                 NavigationLink(destination: HomeView()) {
                     Text("Reiniciar")
-                        .frame(width: screenSize.width * 0.8, height: 48)
-                        .background(Color(.blue))
-                        .foregroundColor(.white)
+                        .blueBackgroundWhiteTitleEightyPercentWidthViewSizeStyle()
                 }
             }
         }
