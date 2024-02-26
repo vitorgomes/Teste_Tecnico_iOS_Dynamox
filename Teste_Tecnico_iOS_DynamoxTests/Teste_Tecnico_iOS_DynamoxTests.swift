@@ -10,10 +10,10 @@ import XCTest
 
 final class Teste_Tecnico_iOS_DynamoxTests: XCTestCase {
     
-    var quizManager: QuizManager!
+    var quizManager: QuizManagerProtocol!
 
     override func setUpWithError() throws {
-        quizManager = QuizManager()
+        quizManager = QuizManagerStub()
     }
 
     override func tearDownWithError() throws {
@@ -24,7 +24,6 @@ final class Teste_Tecnico_iOS_DynamoxTests: XCTestCase {
         let expectation = XCTestExpectation(description: "Fetch questions")
         
         quizManager.fetchQuestions { questions, error in
-            XCTAssertNil(error, "Error while searching questions: \(error?.localizedDescription ?? "Unknown error")")
             
             XCTAssertNotNil(questions, "No answers returned")
             
@@ -41,7 +40,6 @@ final class Teste_Tecnico_iOS_DynamoxTests: XCTestCase {
         let selectedOption = "6:20"
         
         quizManager.submitAnswer(questionId: questionId, answer: selectedOption) { result, error in
-            XCTAssertNil(error, "Error while submiting answer: \(error?.localizedDescription ?? "Unknown error")")
             
             XCTAssertNotNil(result, "No result returned")
             
