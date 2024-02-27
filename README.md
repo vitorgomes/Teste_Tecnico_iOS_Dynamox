@@ -37,15 +37,15 @@ Welcome to the technical test project for building a Quiz! This test aims to eva
 
 ## Code usage instructions:
 
-- Clone this repository to your local machine.
-- Open it using the Xcode IDE.
-- With Xcode open, press the "Run" button located at the top or simply press cmd + R on your keyboard.
+1. Clone this repository to your local machine.
+2. Open it using the Xcode IDE.
+3. With Xcode open, press the "Run" button located at the top or simply press cmd + R on your keyboard.
 
 ## Quiz Instructions:
 
-- On the first screen after the App's presentation screen, the user should enter their name or nickname and press the “Iniciar” button.
-- On the second screen, the game itself will start, presenting one question at a time and 5 options where the user must choose only one and press “Responder” to check if they got it right or wrong and thus, move on to the next question.
-- After answering 10 questions, the user will be taken to the last screen, where they can check their score and view a list with the name and score of other users. They can also restart the game by pressing the “Reiniciar” button.
+1. On the first screen after the App's presentation screen, the user should enter their name or nickname and press the “Iniciar” button.
+2. On the second screen, the game itself will start, presenting one question at a time and 5 options where the user must choose only one and press “Responder” to check if they got it right or wrong and thus, move on to the next question.
+3. After answering 10 questions, the user will be taken to the last screen, where they can check their score and view a list with the name and score of other users. They can also restart the game by pressing the “Reiniciar” button.
 
 ## Technologies and Patterns Used:
 
