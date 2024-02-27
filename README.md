@@ -28,3 +28,36 @@ Bem-vindo(a) ao projeto de teste técnico de montagem de um Quiz! Este teste tem
 ## Dúvidas:
 
 - Se surgirem dúvidas sobre o código, entre em contato comigo através do meu email vitorgomes_silva@outlook.com
+
+---
+
+# (EN) Technical Test - iOS (SwiftUI version)
+
+Welcome to the technical test project for building a Quiz! This test aims to evaluate my technical skills in creating a Quiz using specific technologies involving the Swift language.
+
+## Code usage instructions:
+
+- Clone this repository to your local machine.
+- Open it using the Xcode IDE.
+- With Xcode open, press the "Run" button located at the top or simply press cmd + R on your keyboard.
+
+## Quiz Instructions:
+
+- On the first screen after the App's presentation screen, the user should enter their name or nickname and press the “Iniciar” button.
+- On the second screen, the game itself will start, presenting one question at a time and 5 options where the user must choose only one and press “Responder” to check if they got it right or wrong and thus, move on to the next question.
+- After answering 10 questions, the user will be taken to the last screen, where they can check their score and view a list with the name and score of other users. They can also restart the game by pressing the “Reiniciar” button.
+
+## Technologies and Patterns Used:
+
+- SwiftUI for building screens and animations.
+- MVVM architecture for separating communications between Views and Models using ViewModels.
+- Consumption of HTTP requests (RESTful API provided by the company).
+- SwifData, the new framework for local data persistence.
+- Tests using the XCTest framework.
+- Dependency injections for tests that used internet requests.
+- Code reuse by creating custom styles.
+- Error handling.
+
+## Questions:
+
+- If you have any questions about the code, please contact me via email at vitorgomes_silva@outlook.com
