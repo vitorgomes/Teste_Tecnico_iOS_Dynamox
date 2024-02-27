@@ -24,6 +24,7 @@
 		E7C3042E2B89016900B82E51 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C3042D2B89016900B82E51 /* Question.swift */; };
 		E7C304302B89019700B82E51 /* AnswerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C3042F2B89019700B82E51 /* AnswerResponse.swift */; };
 		E7EC973B2B8D21530057E0D8 /* BlueBackgroundWhiteTitleEightyPercentWidthViewSizeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EC973A2B8D21530057E0D8 /* BlueBackgroundWhiteTitleEightyPercentWidthViewSizeStyle.swift */; };
+		E7EC973E2B8D490A0057E0D8 /* ScoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EC973D2B8D490A0057E0D8 /* ScoreDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		E7C3042D2B89016900B82E51 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		E7C3042F2B89019700B82E51 /* AnswerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerResponse.swift; sourceTree = "<group>"; };
 		E7EC973A2B8D21530057E0D8 /* BlueBackgroundWhiteTitleEightyPercentWidthViewSizeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueBackgroundWhiteTitleEightyPercentWidthViewSizeStyle.swift; sourceTree = "<group>"; };
+		E7EC973D2B8D490A0057E0D8 /* ScoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				E7192ADE2B8D189100ABB75C /* QuizManagerStub.swift */,
 				E7C3042D2B89016900B82E51 /* Question.swift */,
 				E7C3042F2B89019700B82E51 /* AnswerResponse.swift */,
+				E7EC973D2B8D490A0057E0D8 /* ScoreDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			files = (
 				E74F5F792B87F04800D7046A /* QuizManager.swift in Sources */,
 				E793D9682B8CFF8B00174FF7 /* SplashView.swift in Sources */,
+				E7EC973E2B8D490A0057E0D8 /* ScoreDataModel.swift in Sources */,
 				E7192ADD2B8D186F00ABB75C /* QuizManagerProtocol.swift in Sources */,
 				E793D9662B8CF4FE00174FF7 /* ScoreViewModel.swift in Sources */,
 				E793D9642B8CF49B00174FF7 /* HomeViewModel.swift in Sources */,

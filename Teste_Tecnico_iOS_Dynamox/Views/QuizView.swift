@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct QuizView: View {
+    @Environment(\.modelContext) var context
+    
     let screenSize = UIScreen.main.bounds
     let userName: String
     
@@ -41,10 +43,19 @@ struct QuizView: View {
                     }
                 } else {
                     ProgressView("Carregando...")
-                        .onAppear(perform: quizViewModel.fetchQuestion)
+                        .onAppear {
+                            if quizViewModel.questionsAnswered == 0 {
+                                quizViewModel.fetchQuestion()
+                            }
+                        }
                 }
             }
-            
+            .onReceive(quizViewModel.$isQuizCompleted) { isCompleted in
+                if isCompleted {
+                    addPlayer()
+                }
+            }
+
             NavigationLink(destination: ScoreView(userName: userName, score: quizViewModel.score), isActive: $quizViewModel.isQuizCompleted) {
                 EmptyView()
             }
@@ -53,6 +64,11 @@ struct QuizView: View {
         .frame(width: screenSize.width * 0.8, height: screenSize.height * 1)
         .navigationTitle("Perguntas e Respostas")
         .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    func addPlayer() {
+        let player = ScoreDataModel(userName: userName, score: quizViewModel.score)
+        context.insert(player)
     }
 }
 

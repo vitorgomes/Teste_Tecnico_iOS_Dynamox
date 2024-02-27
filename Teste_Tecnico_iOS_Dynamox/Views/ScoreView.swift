@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ScoreView: View {
     let screenSize = UIScreen.main.bounds
     let userName: String
     let score: Int
+    
+    @Query private var players: [ScoreDataModel]
     
     var body: some View {
         NavigationStack {
@@ -21,6 +24,18 @@ struct ScoreView: View {
                 NavigationLink(destination: HomeView()) {
                     Text("Reiniciar")
                         .blueBackgroundWhiteTitleEightyPercentWidthViewSizeStyle()
+                }
+                
+                Text("**Tabela de Scores**")
+                
+                List {
+                    ForEach(players) { player in
+                        HStack {
+                            Text("**Player:** \(player.userName)")
+                            Spacer()
+                            Text("**Score:** \(player.score)")
+                        }
+                    }
                 }
             }
         }

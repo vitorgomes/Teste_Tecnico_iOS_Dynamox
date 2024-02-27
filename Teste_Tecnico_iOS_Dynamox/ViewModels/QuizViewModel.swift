@@ -29,7 +29,7 @@ class QuizViewModel: ObservableObject {
             } else if let fetchedQuestion = fetchedQuestion {
                 self.question = fetchedQuestion
                 print("***")
-                print("Question number (in game): \(questionsAnswered + 1)")
+                print("Question number (in game): \(self.questionsAnswered + 1)")
             }
         }
     }
