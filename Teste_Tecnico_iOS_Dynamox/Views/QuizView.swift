@@ -10,8 +10,11 @@ import SwiftUI
 struct QuizView: View {
     @Environment(\.modelContext) var context
     
-    let screenSize = UIScreen.main.bounds
+    private let screenSize = UIScreen.main.bounds
     let userName: String
+    
+    @State private var pickerDisabled: Bool = false
+    @State private var pickerOpacity: Double = 1.0
     
     @StateObject var quizViewModel = QuizViewModel(quizManager: QuizManager())
     
@@ -29,6 +32,12 @@ struct QuizView: View {
                     }
                     .pickerStyle(.inline)
                     .padding()
+                    .onAppear {
+                        pickerDisabled = false
+                        pickerOpacity = 1.0
+                    }
+                    .disabled(pickerDisabled == true)
+                    .opacity(pickerOpacity)
                     
                     Button(action: quizViewModel.submitAnswer) {
                         Text("Responder")
@@ -40,6 +49,10 @@ struct QuizView: View {
                     if let result = quizViewModel.result {
                         Text(result ? "Resposta correta!" : "Resposta incorreta.")
                             .padding()
+                            .onAppear {
+                                pickerDisabled = true
+                                pickerOpacity = 0.8
+                            }
                     }
                 } else {
                     ProgressView("Carregando...")
