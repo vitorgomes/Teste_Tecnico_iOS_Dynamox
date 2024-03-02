@@ -21,6 +21,8 @@
 		E793D9642B8CF49B00174FF7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E793D9632B8CF49B00174FF7 /* HomeViewModel.swift */; };
 		E793D9662B8CF4FE00174FF7 /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E793D9652B8CF4FE00174FF7 /* ScoreViewModel.swift */; };
 		E793D9682B8CFF8B00174FF7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E793D9672B8CFF8B00174FF7 /* SplashView.swift */; };
+		E7A305352B93B77E00755004 /* Splash2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A305342B93B77E00755004 /* Splash2View.swift */; };
+		E7A305372B93CC9E00755004 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A305362B93CC9E00755004 /* LoginView.swift */; };
 		E7C3042E2B89016900B82E51 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C3042D2B89016900B82E51 /* Question.swift */; };
 		E7C304302B89019700B82E51 /* AnswerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C3042F2B89019700B82E51 /* AnswerResponse.swift */; };
 		E7EC973B2B8D21530057E0D8 /* BlueBackgroundWhiteTitleEightyPercentWidthViewSizeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EC973A2B8D21530057E0D8 /* BlueBackgroundWhiteTitleEightyPercentWidthViewSizeStyle.swift */; };
@@ -54,6 +56,8 @@
 		E793D9632B8CF49B00174FF7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E793D9652B8CF4FE00174FF7 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
 		E793D9672B8CFF8B00174FF7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		E7A305342B93B77E00755004 /* Splash2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash2View.swift; sourceTree = "<group>"; };
+		E7A305362B93CC9E00755004 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E7C3042D2B89016900B82E51 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		E7C3042F2B89019700B82E51 /* AnswerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerResponse.swift; sourceTree = "<group>"; };
 		E7EC973A2B8D21530057E0D8 /* BlueBackgroundWhiteTitleEightyPercentWidthViewSizeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueBackgroundWhiteTitleEightyPercentWidthViewSizeStyle.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 			children = (
 				E74F5F652B87CE4400D7046A /* Teste_Tecnico_iOS_DynamoxApp.swift */,
 				E793D9672B8CFF8B00174FF7 /* SplashView.swift */,
+				E7A305342B93B77E00755004 /* Splash2View.swift */,
+				E7A305362B93CC9E00755004 /* LoginView.swift */,
 				E74F5F7A2B88060800D7046A /* Models */,
 				E7348DFB2B8926000001FCE0 /* ViewModels */,
 				E74F5F732B87D2A600D7046A /* Views */,
@@ -280,11 +286,13 @@
 				E793D9682B8CFF8B00174FF7 /* SplashView.swift in Sources */,
 				E7EC973E2B8D490A0057E0D8 /* ScoreDataModel.swift in Sources */,
 				E7192ADD2B8D186F00ABB75C /* QuizManagerProtocol.swift in Sources */,
+				E7A305352B93B77E00755004 /* Splash2View.swift in Sources */,
 				E793D9662B8CF4FE00174FF7 /* ScoreViewModel.swift in Sources */,
 				E793D9642B8CF49B00174FF7 /* HomeViewModel.swift in Sources */,
 				E7C304302B89019700B82E51 /* AnswerResponse.swift in Sources */,
 				E74F5F682B87CE4400D7046A /* HomeView.swift in Sources */,
 				E7192ADF2B8D189100ABB75C /* QuizManagerStub.swift in Sources */,
+				E7A305372B93CC9E00755004 /* LoginView.swift in Sources */,
 				E7348DFA2B8925F60001FCE0 /* QuizViewModel.swift in Sources */,
 				E7EC973B2B8D21530057E0D8 /* BlueBackgroundWhiteTitleEightyPercentWidthViewSizeStyle.swift in Sources */,
 				E74F5F772B87E02000D7046A /* ScoreView.swift in Sources */,
