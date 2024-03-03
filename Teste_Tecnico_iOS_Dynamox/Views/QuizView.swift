@@ -40,10 +40,9 @@ struct QuizView: View {
                     .opacity(pickerOpacity)
                     
                     Button(action: quizViewModel.submitAnswer) {
-                        Text("Responder")
-                            .frame(width: screenSize.width * 0.8, height: 48, alignment: .center)
+                        Text("RESPONDER")
                     }
-                    .blueBackgroundWhiteTitleEightyPercentWidthViewSizeStyle()
+                    .dynamoxBlueBackgroundWhiteTitleEightyPercentWidthViewSizeStyleRoundedRectangleShape()
                     .padding()
                     
                     if let result = quizViewModel.result {
@@ -73,8 +72,7 @@ struct QuizView: View {
                 EmptyView()
             }
         }
-        
-        .frame(width: screenSize.width * 0.8, height: screenSize.height * 1)
+        .frame(width: screenSize.width * 0.9, height: screenSize.height * 1)
         .navigationTitle("Perguntas e Respostas")
         .navigationBarTitleDisplayMode(.inline)
     }

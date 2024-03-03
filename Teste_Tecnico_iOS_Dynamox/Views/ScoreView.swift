@@ -21,9 +21,10 @@ struct ScoreView: View {
                 Text("**\(userName)** sua pontuaçao foi de: **\(score)** pontos")
                     .padding(.bottom, 8)
 
-                NavigationLink(destination: HomeView()) {
-                    Text("Reiniciar")
-                        .blueBackgroundWhiteTitleEightyPercentWidthViewSizeStyle()
+                NavigationLink(destination: SplashAndLoginView()) {
+                    Text("REINICIAR")
+                        .dynamoxBlueBackgroundWhiteTitleEightyPercentWidthViewSizeStyleRoundedRectangleShape()
+                        .padding()
                 }
                 
                 Text("**Tabela de Scores**")
@@ -39,7 +40,7 @@ struct ScoreView: View {
                 }
             }
         }
-        .frame(width: screenSize.width * 0.8)
+        .frame(width: screenSize.width * 0.9)
         .navigationTitle("Pontuação")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden()

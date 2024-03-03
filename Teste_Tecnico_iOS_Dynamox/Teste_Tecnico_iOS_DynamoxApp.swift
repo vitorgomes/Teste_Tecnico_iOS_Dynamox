@@ -12,7 +12,7 @@ import SwiftData
 struct Teste_Tecnico_iOS_DynamoxApp: App {
     var body: some Scene {
         WindowGroup {
-            SplashView()
+            SplashAndLoginView()
         }
         .modelContainer(for: ScoreDataModel.self)
     }
