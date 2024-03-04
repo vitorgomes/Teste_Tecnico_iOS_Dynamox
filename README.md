@@ -10,9 +10,9 @@ Bem-vindo(a) ao projeto de teste técnico de montagem de um Quiz! Este teste tem
 
 ## Instruções do Quiz:
 
-1. Na primeira tela após a tela de apresentação do App o usuário deve cadastrar seu nome ou apelido e apertar o botão "Iniciar".
-2. Na segunda tela iniciará o jogo em si, apresentando uma pergunta de cada vez e 5 opções em que o usuário deve escolher apenas uma e apertar "Responder" para conferir se acertou ou errou e assim, passar para próxima pergunta.
-3. Ao responder 10 questões o usuário será enviado para última tela, podendo conferir sua pontuação e visualizar uma lista com o nome e pontuação de outros usuários. Também poderá reiniciar o jogo apertando o botão "Reiniciar".
+1. Na primeira tela após a tela de apresentação do App o usuário deve cadastrar seu nome ou apelido e apertar o botão "INICIAR".
+2. Na segunda tela iniciará o jogo em si, apresentando uma pergunta de cada vez e 5 opções em que o usuário deve escolher apenas uma e apertar "RESPONDER" para conferir se acertou ou errou e assim, passar para próxima pergunta.
+3. Ao responder 10 questões o usuário será enviado para última tela, podendo conferir sua pontuação e visualizar uma lista com o nome e pontuação de outros usuários. Também poderá reiniciar o jogo apertando o botão "REINICIAR".
 
 ## Tecnologias e Padrões utilizadas:
 
@@ -43,9 +43,9 @@ Welcome to the technical test project for building a Quiz! This test aims to eva
 
 ## Quiz Instructions:
 
-1. On the first screen after the App's presentation screen, the user should enter their name or nickname and press the “Iniciar” button.
-2. On the second screen, the game itself will start, presenting one question at a time and 5 options where the user must choose only one and press “Responder” to check if they got it right or wrong and thus, move on to the next question.
-3. After answering 10 questions, the user will be taken to the last screen, where they can check their score and view a list with the name and score of other users. They can also restart the game by pressing the “Reiniciar” button.
+1. On the first screen after the App's presentation screen, the user should enter their name or nickname and press the “INICIAR” button.
+2. On the second screen, the game itself will start, presenting one question at a time and 5 options where the user must choose only one and press “RESPONDER” to check if they got it right or wrong and thus, move on to the next question.
+3. After answering 10 questions, the user will be taken to the last screen, where they can check their score and view a list with the name and score of other users. They can also restart the game by pressing the “REINICIAR” button.
 
 ## Technologies and Patterns Used:
 
