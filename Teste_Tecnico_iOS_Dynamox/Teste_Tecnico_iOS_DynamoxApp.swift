@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SwiftData
 
 @main
 struct Teste_Tecnico_iOS_DynamoxApp: App {
@@ -14,6 +13,5 @@ struct Teste_Tecnico_iOS_DynamoxApp: App {
         WindowGroup {
             SplashAndLoginView()
         }
-        .modelContainer(for: ScoreDataModel.self)
     }
 }
