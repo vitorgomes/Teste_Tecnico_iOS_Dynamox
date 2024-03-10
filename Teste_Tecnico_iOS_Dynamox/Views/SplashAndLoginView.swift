@@ -33,7 +33,7 @@ struct SplashAndLoginView: View {
                         HStack(alignment: .center) {
                             Image("dynaPredictCube")
                                 .offset(x: shouldShowText ? -50 : 0, y: 0)
-                                .scaleEffect(shouldAnimate ? 0.2 : 0.4) // TODO: Grow logo size
+                                .scaleEffect(shouldAnimate ? 0.3 : 0.5) // TODO: Grow logo size
                                 .onAppear {
                                     withAnimation(Animation.easeInOut(duration: 1.0).repeatCount(2, autoreverses:  true)) {
                                         self.shouldAnimate = true

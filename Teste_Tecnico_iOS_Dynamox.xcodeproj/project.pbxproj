@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E708193B2B9DFD8800E961E3 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E708193A2B9DFD8800E961E3 /* Realm */; };
+		E708193D2B9DFD8800E961E3 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E708193C2B9DFD8800E961E3 /* RealmSwift */; };
+		E708193F2B9E08CC00E961E3 /* ScoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E708193E2B9E08CC00E961E3 /* ScoreDataModel.swift */; };
 		E7192ADD2B8D186F00ABB75C /* QuizManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7192ADC2B8D186F00ABB75C /* QuizManagerProtocol.swift */; };
 		E7192ADF2B8D189100ABB75C /* QuizManagerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7192ADE2B8D189100ABB75C /* QuizManagerStub.swift */; };
 		E723E2892B88F248002E4944 /* Teste_Tecnico_iOS_DynamoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723E2882B88F248002E4944 /* Teste_Tecnico_iOS_DynamoxTests.swift */; };
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E708193E2B9E08CC00E961E3 /* ScoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDataModel.swift; sourceTree = "<group>"; };
 		E7192ADC2B8D186F00ABB75C /* QuizManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManagerProtocol.swift; sourceTree = "<group>"; };
 		E7192ADE2B8D189100ABB75C /* QuizManagerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManagerStub.swift; sourceTree = "<group>"; };
 		E723E2862B88F248002E4944 /* Teste_Tecnico_iOS_DynamoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Teste_Tecnico_iOS_DynamoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E708193D2B9DFD8800E961E3 /* RealmSwift in Frameworks */,
+				E708193B2B9DFD8800E961E3 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +159,7 @@
 				E7192ADE2B8D189100ABB75C /* QuizManagerStub.swift */,
 				E7C3042D2B89016900B82E51 /* Question.swift */,
 				E7C3042F2B89019700B82E51 /* AnswerResponse.swift */,
+				E708193E2B9E08CC00E961E3 /* ScoreDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,6 +206,10 @@
 			dependencies = (
 			);
 			name = Teste_Tecnico_iOS_Dynamox;
+			packageProductDependencies = (
+				E708193A2B9DFD8800E961E3 /* Realm */,
+				E708193C2B9DFD8800E961E3 /* RealmSwift */,
+			);
 			productName = Teste_Tecnico_iOS_Dynamox;
 			productReference = E74F5F622B87CE4400D7046A /* Teste_Tecnico_iOS_Dynamox.app */;
 			productType = "com.apple.product-type.application";
@@ -231,6 +242,9 @@
 				Base,
 			);
 			mainGroup = E74F5F592B87CE4400D7046A;
+			packageReferences = (
+				E70819392B9DFD8800E961E3 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = E74F5F632B87CE4400D7046A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,6 +289,7 @@
 			files = (
 				E74F5F792B87F04800D7046A /* QuizManager.swift in Sources */,
 				E7192ADD2B8D186F00ABB75C /* QuizManagerProtocol.swift in Sources */,
+				E708193F2B9E08CC00E961E3 /* ScoreDataModel.swift in Sources */,
 				E7A305352B93B77E00755004 /* SplashAndLoginView.swift in Sources */,
 				E793D9662B8CF4FE00174FF7 /* ScoreViewModel.swift in Sources */,
 				E793D9642B8CF49B00174FF7 /* HomeViewModel.swift in Sources */,
@@ -545,6 +560,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E70819392B9DFD8800E961E3 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E708193A2B9DFD8800E961E3 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E70819392B9DFD8800E961E3 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		E708193C2B9DFD8800E961E3 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E70819392B9DFD8800E961E3 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E74F5F5A2B87CE4400D7046A /* Project object */;
 }

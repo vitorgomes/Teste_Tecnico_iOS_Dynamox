@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct ScoreView: View {
+    @ObservedResults(ScoreDataModel.self) var scoresDataModel
+    
     let screenSize = UIScreen.main.bounds
     let userName: String
     let score: Int
@@ -27,13 +30,13 @@ struct ScoreView: View {
                 Text("**Tabela de Scores**")
                 
                 List {
-//                    ForEach(players) { player in
-//                        HStack {
-//                            Text("**Player:** \(player.userName)")
-//                            Spacer()
-//                            Text("**Score:** \(player.score)")
-//                        }
-//                    }
+                    ForEach(scoresDataModel, id: \.id) { scoreDataModel in
+                        HStack {
+                            Text("**Player:** \(scoreDataModel.userName)")
+                            Spacer()
+                            Text("**Score:** \(scoreDataModel.score)")
+                        }
+                    }
                 }
             }
         }
