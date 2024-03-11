@@ -27,6 +27,29 @@ struct ScoreView: View {
                         .padding()
                 }
                 
+                ZStack {
+                    Circle()
+                        .trim(from: 0.0, to: 0.7)
+                        .stroke(Color.defaultBlue, style: StrokeStyle(lineWidth: 8, lineCap: .round))
+                        .frame(width: screenSize.width * 0.4, height: screenSize.height * 0.2)
+                        .rotationEffect(.degrees(-215))
+                    
+                    Text("\(score)")
+                        .foregroundStyle(.blue)
+                        .font(.system(size: 24))
+                        .bold()
+                    
+                    Circle()
+                        .trim(from: 0.0, to: CGFloat(score * 10) / (100 / 0.7))
+                        .stroke(Color.blue, style: StrokeStyle(lineWidth: 8, lineCap: .round))
+                        .frame(width: screenSize.width * 0.4, height: screenSize.height * 0.2)
+                        .rotationEffect(.degrees(-215))
+                }
+                
+                Text("Pontos")
+                    .foregroundStyle(.blue)
+                    .padding(.bottom, 16)
+                
                 Text("**Tabela de Scores**")
                 
                 List {

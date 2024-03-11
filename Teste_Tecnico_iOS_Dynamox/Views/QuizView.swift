@@ -41,8 +41,8 @@ struct QuizView: View {
                     
                     Button(action: quizViewModel.submitAnswer) {
                         Text("RESPONDER")
+                            .dynamoxBlueBackgroundWhiteTitleEightyPercentWidthViewSizeStyleRoundedRectangleShape()
                     }
-                    .dynamoxBlueBackgroundWhiteTitleEightyPercentWidthViewSizeStyleRoundedRectangleShape()
                     .padding()
                     
                     if let result = quizViewModel.result {
