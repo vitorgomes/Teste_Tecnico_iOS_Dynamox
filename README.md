@@ -19,7 +19,7 @@ Bem-vindo(a) ao projeto de teste técnico de montagem de um Quiz! Este teste tem
 - SwiftUI para a construções das telas e animações.
 - Arquitetura MVVM para a separação de comunicações entre Views e Models utilizando ViewModels.
 - Consumo de requisições HTTP (API RESTful que foi disponibilizada pela empresa).
-- SwifData o novo framework para persistência local de dados.
+- Realm, um banco de dados terceiro para persistência local (e também SwifData, o novo framework para persistência local de dados que pode ser encontrado no branch "main").
 - Testes usando o framework XCTest.
 - Injeções de dependências, para os testes que utilizavam requisições via internet.
 - Reutilização de código criando estilos customizados.
@@ -52,7 +52,7 @@ Welcome to the technical test project for building a Quiz! This test aims to eva
 - SwiftUI for building screens and animations.
 - MVVM architecture for separating communications between Views and Models using ViewModels.
 - Consumption of HTTP requests (RESTful API provided by the company).
-- SwifData, the new framework for local data persistence.
+- Realm, a third-party local persistence database (and also SwifData, the new framework for local data persistence which can be found in the "main" branch).
 - Tests using the XCTest framework.
 - Dependency injections for tests that used internet requests.
 - Code reuse by creating custom styles.
